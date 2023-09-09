@@ -3,7 +3,7 @@ import { ProductSectionData } from "../data";
 const ProductSection = () => {
 
   return (
-    <div className="max-w-6xl mx-auto px-16 my-12">
+    <div className="max-w-5xl px-8 my-12 mx-auto">
       {
         ProductSectionData.map((section,i)=>{
           return(
@@ -17,9 +17,9 @@ const ProductSection = () => {
 
 const Section = ({ name, productArray }:{name:string,productArray:Array<any>}) => {
   return (
-    <>
-      <h1 className="text-3xl font-bold my-8">{name}</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div className="">
+      <h1 className="text-2xl font-bold my-8">{name}</h1>
+      <div className="grid grid-cols-1 min-[400px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 sm:gap-10">
         {productArray.map((product, index) => (
           <ProductCard
             key={index}
@@ -30,7 +30,7 @@ const Section = ({ name, productArray }:{name:string,productArray:Array<any>}) =
           />
         ))}
       </div>
-    </>
+      </div>
   );
 };
 export default ProductSection;

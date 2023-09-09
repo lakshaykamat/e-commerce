@@ -9,8 +9,7 @@ interface Category {
 const ProductNavigation = ({ categories }:{categories:any}) => {
   return (
     <>
-    <div className="max-w-6xl px-16 my-12 mx-auto">
-
+    <div className="max-w-5xl px-8 my-12 mx-auto">
       <div className="grid  sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-10 ">
         {categories.map((item:any, index:any) => {
           return <Card  key={index} title={item.title} products={item.products} />;

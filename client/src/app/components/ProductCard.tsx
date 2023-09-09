@@ -48,27 +48,27 @@ export const TodayDealCard = ({discount,altTxt,image,name,description,price,disc
 };
 const ProductCard = ({image,name,description,price}:ProductCardProps) => {
     return (
-      <div className="flex bg-slate-100 flex-col border p-4 rounded-lg shadow-md">
+      <div className="hover:scale-105 transition-all flex bg-slate-100 flex-col border p-4 rounded-lg shadow-md">
         <div className="flex justify-center">
           <Image
             src={image}
-            width={250}
-            height={250}
+            width={150}
+            height={150}
             alt="Monitor"
           />
         </div>
         <div className="mt-4">
-          <h1 className="text-xl font-semibold">{name}</h1>
-          <p className="text-gray-500 mt-2">
+          <h1 className="text-lg font-semibold">{name}</h1>
+          <p className="text-gray-500 text-sm mt-2">
             {description}
           </p>
-          <div className="flex justify-between items-center mt-4">
+          <div className="flex sm:justify-between flex-col sm:flex-row gap-2 mt-4">
             <div>
-              <span className="text-xl font-bold text-blue-600">
+              <span className="text-base sm:text-xl font-bold text-blue-600">
                 {price}
               </span>
             </div>
-            <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
+            <button className="text-sm sm:text-base bg-blue-500 hover:bg-blue-600 text-white rounded p-2 sm:px-4 sm:py-2">
               View Details
             </button>
           </div>
