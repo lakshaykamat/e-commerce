@@ -1,33 +1,36 @@
-import Image from "next/image";
+import ProductCard from "./ProductCard";
+import { ProductSectionData } from "../data";
+const ProductSection = () => {
 
-const Section = () => {
   return (
-    <div className="max-w-5xl my-6 mx-auto">
-      <h1 className="text-4xl font-bold mb-6">Electronics</h1>
-      <div className="grid grid-cols-4 gap-20">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
+    <div className="max-w-6xl mx-auto mt-8">
+      {
+        ProductSectionData.map((section)=>{
+          return(
+            <Section name={section.name} productArray={section.items}/>
+          )
+        })
+      }
     </div>
   );
 };
 
-const Card = () => {
+const Section = ({ name, productArray }:{name:string,productArray:Array<any>}) => {
   return (
-    <div className="flex flex-col">
-      <Image
-        src={"/assets/earphones_a_1.webp"}
-        width={300}
-        height={300}
-        alt="DD"
-      />
-      <div className="flex mt-4 items-center justify-between">
-        <h1 className="text-xl">{"Monitor"}</h1>
-        <span>{"From $49"}</span>
+    <>
+      <h1 className="text-3xl font-bold my-8">{name}</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {productArray.map((product, index) => (
+          <ProductCard
+            key={index}
+            image={product.image}
+            name={product.name}
+            price={product.price}
+            description={product.description}
+          />
+        ))}
       </div>
-    </div>
+    </>
   );
 };
-export default Section;
+export default ProductSection;
