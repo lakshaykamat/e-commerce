@@ -5,9 +5,9 @@ const ProductSection = () => {
   return (
     <div className="max-w-6xl mx-auto mt-8">
       {
-        ProductSectionData.map((section)=>{
+        ProductSectionData.map((section,i)=>{
           return(
-            <Section name={section.name} productArray={section.items}/>
+            <Section key={i} name={section.name} productArray={section.items}/>
           )
         })
       }

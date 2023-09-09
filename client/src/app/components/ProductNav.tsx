@@ -6,12 +6,12 @@ interface Category {
   imageSrc: string; // Add image source property
 }
 
-const ProductNavigation = ({ categories }) => {
+const ProductNavigation = ({ categories }:{categories:any}) => {
   return (
     <>
       <div className="grid grid-cols-3 gap-10 max-w-6xl mx-auto">
-        {categories.map((item, index) => {
-          return <Card title={item.title} products={item.products} />;
+        {categories.map((item:any, index:any) => {
+          return <Card  key={index} title={item.title} products={item.products} />;
         })}
       </div>
     </>

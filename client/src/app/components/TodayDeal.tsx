@@ -4,12 +4,13 @@ import { TodayDealCard } from "./ProductCard";
 const TodayDeal = () => {
   return (
     <div className="max-w-5xl px-16 my-12 mx-auto">
-      <h1 className="text-4xl font-bold my-8">Today's Deal</h1>
+      <h1 className="text-4xl font-bold my-8">Today&apos;s Deal</h1>
       <div className="pb-10 rounded-2xl grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-20  drop-shadow-md">
         {
           TodayDealData.map((product,index)=>{
             return(
-              <TodayDealCard 
+              <TodayDealCard
+              key={index}
               image={product.image} 
               altTxt={product.altTxt} 
               discount={product.discount} 

@@ -127,7 +127,7 @@ const Dropdown = ({setDropDown}:{setDropDown:  Dispatch<SetStateAction<boolean>>
               >
                 <div className="font-semibold">Online Stores</div>
                 <span className="text-sm text-gray-500">
-                  Connect with third-party tools that you're already using.
+                  Connect with third-party tools that you&apos;re already using.
                 </span>
               </a>
             </li>
@@ -138,7 +138,7 @@ const Dropdown = ({setDropDown}:{setDropDown:  Dispatch<SetStateAction<boolean>>
               >
                 <div className="font-semibold">Segmentation</div>
                 <span className="text-sm text-gray-500 dark:text-gray-400">
-                  Connect with third-party tools that you're already using.
+                  Connect with third-party tools that you&apos;re already using.
                 </span>
               </a>
             </li>
@@ -149,7 +149,7 @@ const Dropdown = ({setDropDown}:{setDropDown:  Dispatch<SetStateAction<boolean>>
               >
                 <div className="font-semibold">Marketing CRM</div>
                 <span className="text-sm text-gray-500 dark:text-gray-400">
-                  Connect with third-party tools that you're already using.
+                  Connect with third-party tools that you&apos;re already using.
                 </span>
               </a>
             </li>
@@ -162,7 +162,7 @@ const Dropdown = ({setDropDown}:{setDropDown:  Dispatch<SetStateAction<boolean>>
               >
                 <div className="font-semibold">Online Stores</div>
                 <span className="text-sm text-gray-500 dark:text-gray-400">
-                  Connect with third-party tools that you're already using.
+                  Connect with third-party tools that you&apos;re already using.
                 </span>
               </a>
             </li>
@@ -173,7 +173,7 @@ const Dropdown = ({setDropDown}:{setDropDown:  Dispatch<SetStateAction<boolean>>
               >
                 <div className="font-semibold">Segmentation</div>
                 <span className="text-sm text-gray-500 dark:text-gray-400">
-                  Connect with third-party tools that you're already using.
+                  Connect with third-party tools that you&apos;re already using.
                 </span>
               </a>
             </li>
@@ -184,7 +184,7 @@ const Dropdown = ({setDropDown}:{setDropDown:  Dispatch<SetStateAction<boolean>>
               >
                 <div className="font-semibold">Marketing CRM</div>
                 <span className="text-sm text-gray-500 dark:text-gray-400">
-                  Connect with third-party tools that you're already using.
+                  Connect with third-party tools that you&apos;re already using.
                 </span>
               </a>
             </li>
