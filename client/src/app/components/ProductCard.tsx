@@ -58,13 +58,13 @@ const ProductCard = ({image,name,description,price}:ProductCardProps) => {
           />
         </div>
         <div className="mt-4">
-          <h1 className="text-2xl font-semibold">{name}</h1>
+          <h1 className="text-xl font-semibold">{name}</h1>
           <p className="text-gray-500 mt-2">
             {description}
           </p>
           <div className="flex justify-between items-center mt-4">
             <div>
-              <span className="text-2xl font-bold text-blue-600">
+              <span className="text-xl font-bold text-blue-600">
                 {price}
               </span>
             </div>

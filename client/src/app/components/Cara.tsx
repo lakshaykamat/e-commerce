@@ -48,10 +48,10 @@ const Carousel = () => {
           alt="Banner Image"
         />
         <div className="flex px-16 flex-col gap-4">
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
             {carouselData[currentSlide].heading}
           </h1>
-          <p>{carouselData[currentSlide].description}</p>
+          <p className="text-base">{carouselData[currentSlide].description}</p>
           <button className="w-fit px-3 py-2 text-white rounded-md bg-blue-500 transition transform hover:scale-105">
             {carouselData[currentSlide].buttonLabel}
           </button>

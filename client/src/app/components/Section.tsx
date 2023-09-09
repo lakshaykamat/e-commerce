@@ -3,7 +3,7 @@ import { ProductSectionData } from "../data";
 const ProductSection = () => {
 
   return (
-    <div className="max-w-6xl mx-auto mt-8">
+    <div className="max-w-6xl mx-auto px-16 my-12">
       {
         ProductSectionData.map((section,i)=>{
           return(
